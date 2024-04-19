@@ -13,5 +13,6 @@ export enum Subjects {
 
     PaymentCreated = "payment:created",
 
-    Example = "example:event"
+    ExampleListen = "example:listen",
+    ExamplePublish = "example:publish"
 }
