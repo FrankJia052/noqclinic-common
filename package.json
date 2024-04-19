@@ -1,6 +1,6 @@
 {
   "name": "@noqclinic/common",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "global library for noqclinic micro services",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
