@@ -20,4 +20,7 @@ export * from "./events/types/example"
 export * from "./events/base-listener"
 export * from "./events/base-publisher"
 export * from "./events/subjects"
-export * from "./events/example-event"
+
+// example events
+export * from "./events/example-listen-event"
+export * from "./events/example-publish-event"
