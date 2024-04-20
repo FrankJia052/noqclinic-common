@@ -4,8 +4,8 @@
 
 import { Subjects } from "./subjects";
 
-export interface ExampleCreateEvent {
-    subject: Subjects.ExampleCreate;
+export interface ExampleCreatedEvent {
+    subject: Subjects.ExampleCreated;
     data: {
         text: string
     }

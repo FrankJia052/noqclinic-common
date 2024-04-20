@@ -22,5 +22,5 @@ export * from "./events/base-publisher"
 export * from "./events/subjects"
 
 // example events
-export * from "./events/example-create-event"
-export * from "./events/example-update-event"
+export * from "./events/example-created-event"
+export * from "./events/example-updated-event"

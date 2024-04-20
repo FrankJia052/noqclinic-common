@@ -4,8 +4,8 @@
 
 import { Subjects } from "./subjects";
 
-export interface ExampleUpdateEvent {
-    subject: Subjects.ExampleUpdate;
+export interface ExampleUpdatesEvent {
+    subject: Subjects.ExampleUpdated;
     data: {
         text: string
     }
