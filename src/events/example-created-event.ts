@@ -1,5 +1,5 @@
 /**
- * This is an example create event definition
+ * This is an example created event definition
  */
 
 import { Subjects } from "./subjects";

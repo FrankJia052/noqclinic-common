@@ -1,10 +1,10 @@
 /**
- * This is an example update event definition
+ * This is an example updated event definition
  */
 
 import { Subjects } from "./subjects";
 
-export interface ExampleUpdatesEvent {
+export interface ExampleUpdatedEvent {
     subject: Subjects.ExampleUpdated;
     data: {
         text: string
