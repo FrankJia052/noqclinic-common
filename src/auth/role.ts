@@ -1,8 +1,8 @@
-export const ROLE = {
-    super: "super-administrator",
-    admin: "administrator",
-    employer: "employer",
-    client: "client"
+export enum ROLE {
+    super = "super-administrator",
+    admin = "administrator",
+    employer = "employer",
+    client = "client"
 };
 
 export enum RESOURCES {
