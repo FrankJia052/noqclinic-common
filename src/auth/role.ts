@@ -9,7 +9,8 @@ export enum RESOURCES {
     chat = "chat",
     booking = "booking",
     preDiagnosis = "pre-diagnosis",
-    ai = "AI"
+    ai = "AI",
+    test = "test"
 };
 
 export enum ACTIONS {
@@ -38,6 +39,10 @@ export const PERMISSIONS = [
             {
                 resource: RESOURCES.ai,
                 actions: [ ACTIONS.create, ACTIONS.read, ACTIONS.update, ACTIONS.delete ]
+            },
+            {
+                resource: RESOURCES.test,
+                actions: [ ACTIONS.read ]
             },
         ]
     },
