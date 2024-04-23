@@ -24,3 +24,6 @@ export * from "./events/subjects"
 // example events
 export * from "./events/example-created-event"
 export * from "./events/example-updated-event"
+
+// auth
+export * from "./auth/role"
