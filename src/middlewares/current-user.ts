@@ -1,10 +1,12 @@
 import { NextFunction, Request, Response } from "express";
 import jwt from "jsonwebtoken"
+import { ACTIONS, RESOURCES, ROLE } from "../auth/role";
 
 interface UserPayload {
     id: string;
+    userName: string;
     email: string;
-    role: string;
+    roles: {name: ROLE, permissions: {resource: RESOURCES, actions: ACTIONS}[]}[];
 }
 
 declare global {
