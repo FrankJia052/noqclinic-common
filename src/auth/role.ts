@@ -1,7 +1,7 @@
 export enum ROLE {
     superAdministrator = "super-administrator",
     admin = "administrator",
-    employer = "employer",
+    employee = "employee",
     client = "client"
 };
 
@@ -47,7 +47,7 @@ export const PERMISSIONS = [
         ]
     },
     {
-        role: ROLE.employer,
+        role: ROLE.employee,
         permissions: [
             {
                 resource: RESOURCES.chat,
