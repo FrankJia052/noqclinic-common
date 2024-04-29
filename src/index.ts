@@ -28,3 +28,4 @@ export * from "./events/example-updated-event"
 
 // auth
 export * from "./auth/role"
+export * from "./auth/userInfo"
