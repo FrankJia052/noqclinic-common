@@ -10,7 +10,8 @@ export enum RESOURCES {
     booking = "booking",
     preDiagnosis = "pre-diagnosis",
     ai = "AI",
-    test = "test"
+    test = "test",
+    userInfo = "user-info"
 };
 
 export enum ACTIONS {
@@ -20,97 +21,14 @@ export enum ACTIONS {
     update = "update"
 };
 
-export const PERMISSIONS = [
-    {
-        role: ROLE.client,
-        permissions: [
-            {
-                resource: RESOURCES.chat,
-                actions: [ ACTIONS.create, ACTIONS.read, ACTIONS.update, ACTIONS.delete ]
-            },
-            {
-                resource: RESOURCES.booking,
-                actions: [ ACTIONS.create, ACTIONS.read, ACTIONS.update, ACTIONS.delete ]
-            },
-            {
-                resource: RESOURCES.preDiagnosis,
-                actions: [ ACTIONS.create, ACTIONS.read, ACTIONS.update, ACTIONS.delete ]
-            },
-            {
-                resource: RESOURCES.ai,
-                actions: [ ACTIONS.create, ACTIONS.read, ACTIONS.update, ACTIONS.delete ]
-            },
-            {
-                resource: RESOURCES.test,
-                actions: [ ACTIONS.read ]
-            },
-        ]
-    },
-    {
-        role: ROLE.employee,
-        permissions: [
-            {
-                resource: RESOURCES.chat,
-                actions: [ ACTIONS.create, ACTIONS.read, ACTIONS.update, ACTIONS.delete ]
-            },
-            {
-                resource: RESOURCES.booking,
-                actions: [ ACTIONS.create, ACTIONS.read, ACTIONS.update, ACTIONS.delete ]
-            },
-            {
-                resource: RESOURCES.preDiagnosis,
-                actions: [ ACTIONS.create, ACTIONS.read, ACTIONS.update, ACTIONS.delete ]
-            },
-            {
-                resource: RESOURCES.ai,
-                actions: [ ACTIONS.create, ACTIONS.read, ACTIONS.update, ACTIONS.delete ]
-            },
-        ]
-    },
-    {
-        role: ROLE.admin,
-        permissions: [
-            {
-                resource: RESOURCES.chat,
-                actions: [ ACTIONS.create, ACTIONS.read, ACTIONS.update, ACTIONS.delete ]
-            },
-            {
-                resource: RESOURCES.booking,
-                actions: [ ACTIONS.create, ACTIONS.read, ACTIONS.update, ACTIONS.delete ]
-            },
-            {
-                resource: RESOURCES.preDiagnosis,
-                actions: [ ACTIONS.create, ACTIONS.read, ACTIONS.update, ACTIONS.delete ]
-            },
-            {
-                resource: RESOURCES.ai,
-                actions: [ ACTIONS.create, ACTIONS.read, ACTIONS.update, ACTIONS.delete ]
-            },
-        ]
-    },
-    {
-        role: ROLE.superAdministrator,
-        permissions: [
-            {
-                resource: RESOURCES.chat,
-                actions: [ ACTIONS.create, ACTIONS.read, ACTIONS.update, ACTIONS.delete ]
-            },
-            {
-                resource: RESOURCES.booking,
-                actions: [ ACTIONS.create, ACTIONS.read, ACTIONS.update, ACTIONS.delete ]
-            },
-            {
-                resource: RESOURCES.preDiagnosis,
-                actions: [ ACTIONS.create, ACTIONS.read, ACTIONS.update, ACTIONS.delete ]
-            },
-            {
-                resource: RESOURCES.ai,
-                actions: [ ACTIONS.create, ACTIONS.read, ACTIONS.update, ACTIONS.delete ]
-            },
-        ]
-    },
-]
-
+// for test only
+export const PERMISSIONS = {
+    role: ROLE.superAdministrator,
+    permissions: Object.values(RESOURCES).map(resource => ({
+        resource: resource,
+        actions: Object.values(ACTIONS)
+    }))
+}
 
 
 
