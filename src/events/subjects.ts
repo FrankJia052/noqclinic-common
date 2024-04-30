@@ -3,6 +3,10 @@
  */
 
 export enum Subjects {
+    // auth
+    UserCreated = "user:created",
+    UserUpdated = "user:updated",
+
     TicketCreated = "ticket:created",
     TicketUpdated = "ticket:update",
 
