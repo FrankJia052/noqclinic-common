@@ -1,3 +1,4 @@
+import { ROLE } from "../auth/role";
 import { Subjects } from "./subjects";
 
 export interface UserCreatedEvent {
@@ -6,7 +7,7 @@ export interface UserCreatedEvent {
         id: string,
         userName: string,
         email: string,
-        roles: string[],
+        roles: ROLE[],
         isActive: boolean,
         createdAt: Date,
         updatedAt: Date,
