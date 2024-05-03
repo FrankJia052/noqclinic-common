@@ -18,7 +18,8 @@ export enum ACTIONS {
     create = "create",
     read = "read",
     delete = "delete",
-    update = "update"
+    update = "update",
+    readOthers = "readOthers",
 };
 
 // for test only
