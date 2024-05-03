@@ -1,8 +1,8 @@
 export enum ROLE {
-    superAdministrator = "super-administrator",
-    admin = "administrator",
-    employee = "employee",
-    client = "client"
+    superAdministrator = "SuperAdmin",
+    admin = "Admin",
+    employee = "Employee",
+    client = "Client"
 };
 
 export enum RESOURCES {
