@@ -16,7 +16,6 @@ export * from "./middlewares/validate-request"
 
 // global types
 export * from "./events/types/example"
-
 // events
 export * from "./events/base-listener"
 export * from "./events/base-publisher"
