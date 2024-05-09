@@ -23,6 +23,8 @@ export * from "./events/base-publisher"
 export * from "./events/subjects"
 export * from "./events/user-created-event"
 export * from "./events/user-updated-event"
+export * from "./events/patient-created-event"
+export * from "./events/doctor-created-event"
 
 // example events
 export * from "./events/example-created-event"
