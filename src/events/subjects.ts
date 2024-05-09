@@ -7,6 +7,10 @@ export enum Subjects {
     UserCreated = "user:created",
     UserUpdated = "user:updated",
 
+    // booking service required
+    doctorCreated = "doctor:created",
+    patientCreated = "patient:created",
+
     TicketCreated = "ticket:created",
     TicketUpdated = "ticket:update",
 
