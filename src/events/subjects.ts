@@ -8,8 +8,8 @@ export enum Subjects {
     UserUpdated = "user:updated",
 
     // booking service required
-    doctorCreated = "doctor:created",
-    patientCreated = "patient:created",
+    DoctorCreated = "doctor:created",
+    PatientCreated = "patient:created",
 
     TicketCreated = "ticket:created",
     TicketUpdated = "ticket:update",
