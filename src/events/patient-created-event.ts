@@ -1,7 +1,7 @@
 import { Subjects } from "./subjects";
 
 export interface PatientCreatedEvent {
-    subject: Subjects.PatientCreated;
+    subject: Subjects.patientCreated;
     data: {
         userId: string
     }
