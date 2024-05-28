@@ -7,6 +7,7 @@ export * from "./errors/not-found-error"
 export * from "./errors/request-validation-error"
 export * from "./errors/example-error"
 export * from "./errors/invocation-error"
+export * from "./errors/file-not-found-error"
 
 // middlewares
 export * from "./middlewares/current-user"
